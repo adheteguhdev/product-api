@@ -1,6 +1,6 @@
 ## Introduction
 
-### This is the reason why clean architecture if good
+### This is the reason why clean architecture is good
 - Testability: Clean Architecture makes it easier to write automated tests for the application. Since each layer is independent of the others, you can test each layer in isolation, and the tests become more reliable.
 
 - Maintainability: The separation of concerns provided by Clean Architecture makes it easier to maintain the application. You can modify one layer without affecting the other layers, and changes can be made more efficiently.
