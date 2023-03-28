@@ -11,6 +11,11 @@
 
 - Independence: The different layers of Clean Architecture are independent, and one layer can be replaced or updated without affecting the others. This independence promotes modularity and makes it easier to work on the application as a team.
 
+### How to scale up and when need its to be
+
+- Actually it depends on the problem but if the question is how the answer is to increase performance, use new technologies according to needs so that app can be faster and lighter, and then seperate things from big things into small things.
+
+- When it's needed, like when we have a target that's we want to achieve or when the app is not able to handle a lot of things. But ya it depends on the need.
 ### Technology Stacks:
  - Go language
  - Echo framwork
