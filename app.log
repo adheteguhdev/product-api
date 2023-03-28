@@ -1,0 +1,78 @@
+INFO: 2023/03/28 19:11:08 File: main.go, Line: 40 - Database connected
+INFO: 2023/03/28 19:11:08 File: redis.go, Line: 44 - Redis connected: PONG
+INFO: 2023/03/28 19:11:08 File: main.go, Line: 59 - Starting server on port 8080
+INFO: 2023/03/28 19:11:19 File: user.go, Line: 20 - user created
+INFO: 2023/03/28 19:11:19 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+ERROR: 2023/03/28 19:11:54 File: redis_cache.go, Line: 38 - failed to get key-value from Redis: redis: nil
+INFO: 2023/03/28 19:11:54 File: user.go, Line: 55 - get all users
+INFO: 2023/03/28 19:11:54 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+ERROR: 2023/03/28 19:12:38 File: redis_cache.go, Line: 38 - failed to get key-value from Redis: redis: nil
+INFO: 2023/03/28 19:12:38 File: user.go, Line: 92 - get user by id
+INFO: 2023/03/28 19:12:38 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+INFO: 2023/03/28 19:14:22 File: redis_cache.go, Line: 48 - key user:25 found in Redis
+INFO: 2023/03/28 19:14:22 File: user.go, Line: 79 - got user 25 from Redis cache
+INFO: 2023/03/28 19:14:22 File: redis_cache.go, Line: 59 - successfully delete key-value in Redis
+INFO: 2023/03/28 19:14:22 File: user.go, Line: 124 - user updated
+ERROR: 2023/03/28 19:14:45 File: redis_cache.go, Line: 38 - failed to get key-value from Redis: redis: nil
+INFO: 2023/03/28 19:14:45 File: user.go, Line: 147 - user deleted
+ERROR: 2023/03/28 19:15:54 File: order_item.go, Line: 20 - name is required
+ERROR: 2023/03/28 19:16:30 File: order_item.go, Line: 25 - price is required
+INFO: 2023/03/28 19:16:50 File: order_item.go, Line: 19 - order created
+INFO: 2023/03/28 19:16:50 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+ERROR: 2023/03/28 19:17:41 File: redis_cache.go, Line: 38 - failed to get key-value from Redis: redis: nil
+INFO: 2023/03/28 19:17:41 File: order_item.go, Line: 54 - get all order items
+INFO: 2023/03/28 19:17:41 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+INFO: 2023/03/28 19:18:05 File: redis_cache.go, Line: 48 - key orderItem:14 found in Redis
+INFO: 2023/03/28 19:18:05 File: order_item.go, Line: 78 - got orderItem 14 from Redis cache
+INFO: 2023/03/28 19:18:52 File: redis_cache.go, Line: 48 - key orderItem:14 found in Redis
+INFO: 2023/03/28 19:18:52 File: order_item.go, Line: 78 - got orderItem 14 from Redis cache
+INFO: 2023/03/28 19:18:52 File: redis_cache.go, Line: 59 - successfully delete key-value in Redis
+INFO: 2023/03/28 19:18:52 File: order_item.go, Line: 123 - order item updated
+ERROR: 2023/03/28 19:19:04 File: redis_cache.go, Line: 38 - failed to get key-value from Redis: redis: nil
+INFO: 2023/03/28 19:19:04 File: order_item.go, Line: 91 - get order item by id
+INFO: 2023/03/28 19:19:04 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+INFO: 2023/03/28 19:19:04 File: redis_cache.go, Line: 59 - successfully delete key-value in Redis
+INFO: 2023/03/28 19:19:04 File: order_item.go, Line: 123 - order item updated
+ERROR: 2023/03/28 19:19:57 File: redis_cache.go, Line: 38 - failed to get key-value from Redis: redis: nil
+INFO: 2023/03/28 19:19:57 File: order_item.go, Line: 144 - order item deleted
+INFO: 2023/03/28 19:20:22 File: redis_cache.go, Line: 48 - key orderItems found in Redis
+INFO: 2023/03/28 19:20:22 File: order_item.go, Line: 42 - got all order items from Redis cache
+ERROR: 2023/03/28 19:21:42 File: redis_cache.go, Line: 38 - failed to get key-value from Redis: redis: nil
+INFO: 2023/03/28 19:21:42 File: order_history.go, Line: 58 - get all order history
+INFO: 2023/03/28 19:21:42 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+INFO: 2023/03/28 19:23:25 File: redis_cache.go, Line: 48 - key orderHistory found in Redis
+INFO: 2023/03/28 19:23:25 File: order_history.go, Line: 46 - got all orderHistory from Redis cache
+INFO: 2023/03/28 19:23:36 File: main.go, Line: 40 - Database connected
+INFO: 2023/03/28 19:23:36 File: redis.go, Line: 44 - Redis connected: PONG
+INFO: 2023/03/28 19:23:36 File: main.go, Line: 59 - Starting server on port 8080
+INFO: 2023/03/28 19:23:42 File: redis_cache.go, Line: 48 - key orderHistory found in Redis
+INFO: 2023/03/28 19:23:42 File: order_history.go, Line: 46 - got all orderHistory from Redis cache
+ERROR: 2023/03/28 19:25:17 File: order_history.go, Line: 20 - user id is required
+ERROR: 2023/03/28 19:25:36 File: order_history.go, Line: 25 - order item id is required
+ERROR: 2023/03/28 19:26:28 File: redis_cache.go, Line: 38 - failed to get key-value from Redis: redis: nil
+INFO: 2023/03/28 19:26:28 File: user.go, Line: 92 - get user by id
+INFO: 2023/03/28 19:26:28 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+ERROR: 2023/03/28 19:26:28 File: redis_cache.go, Line: 38 - failed to get key-value from Redis: redis: nil
+INFO: 2023/03/28 19:26:28 File: order_item.go, Line: 91 - get order item by id
+INFO: 2023/03/28 19:26:28 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+INFO: 2023/03/28 19:26:28 File: order_history.go, Line: 22 - order history created
+INFO: 2023/03/28 19:26:28 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+ERROR: 2023/03/28 19:26:54 File: redis_cache.go, Line: 38 - failed to get key-value from Redis: redis: nil
+INFO: 2023/03/28 19:26:54 File: order_history.go, Line: 58 - get all order history
+INFO: 2023/03/28 19:26:54 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+INFO: 2023/03/28 19:27:25 File: redis_cache.go, Line: 48 - key orderHistory:17 found in Redis
+INFO: 2023/03/28 19:27:25 File: order_history.go, Line: 82 - got orderHistory 17 from Redis cache
+INFO: 2023/03/28 19:28:45 File: redis_cache.go, Line: 48 - key orderHistory:17 found in Redis
+INFO: 2023/03/28 19:28:45 File: order_history.go, Line: 82 - got orderHistory 17 from Redis cache
+INFO: 2023/03/28 19:28:45 File: redis_cache.go, Line: 48 - key user:56 found in Redis
+INFO: 2023/03/28 19:28:45 File: user.go, Line: 79 - got user 56 from Redis cache
+INFO: 2023/03/28 19:28:45 File: redis_cache.go, Line: 48 - key orderItem:5 found in Redis
+INFO: 2023/03/28 19:28:45 File: order_item.go, Line: 78 - got orderItem 5 from Redis cache
+INFO: 2023/03/28 19:28:45 File: redis_cache.go, Line: 59 - successfully delete key-value in Redis
+INFO: 2023/03/28 19:28:45 File: order_history.go, Line: 128 - order history updated
+INFO: 2023/03/28 19:29:17 File: redis_cache.go, Line: 48 - key orderHistory found in Redis
+INFO: 2023/03/28 19:29:17 File: order_history.go, Line: 46 - got all orderHistory from Redis cache
+INFO: 2023/03/28 19:35:57 File: user.go, Line: 20 - user created
+INFO: 2023/03/28 19:35:57 File: redis_cache.go, Line: 26 - successfully set key-value in Redis
+INFO: 2023/03/28 19:58:58 File: user.go, Line: 20 - user created
+INFO: 2023/03/28 19:58:58 File: redis_cache.go, Line: 26 - successfully set key-value in Redis

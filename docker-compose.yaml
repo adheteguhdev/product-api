@@ -1,0 +1,53 @@
+version: '3.1'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DB_HOST: postgres
+      DB_PORT: "5432"
+      DB_USER: admin
+      DB_PASSWORD: password
+      DB_NAME: products
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - bridge
+
+  postgres:
+    image: postgres:12
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: products
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - bridge
+    
+  redis:
+    image: bitnami/redis:6.0
+    ports:
+      - "6378:6378"
+    volumes:
+      - db_data:/var/lib/redis
+      - db_data:/usr/local/etc/redis/redis.conf
+    environment:
+      - REDIS_REPLICATION_MODE=master
+      - ALLOW_EMPTY_PASSWORD=yes
+    networks:
+      - bridge
+
+networks:
+  bridge:
+
+volumes:
+  db_data:
